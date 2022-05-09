@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img gallery
+        div.gall {
+            width: 180px;
+            float: left;
+            padding: 5px;
+            border: 1px solid black;
+            margin: 2px;
+        }
+        
+        div.gall:hover {
+            border: 2px solid salmon;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+        }
+        
+        div.desc {
+            text-align: center;
+            font-size: smaller;
+        }*/
+        /* Styling Forms 
+        body {
+            background-image: url("Images/HVOB.jpg");
+        }
+        
+        ul {
+            background-color: #444444;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a:link {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 30px;
+            font-weight: 900;
+            display: inline-block;
+        }
+        
+        li a:visited,
+        li a:active {
+            color: white;
+        }
+        
+        li a:hover,
+        .lii a:hover .lnk {
+            background-color: red;
+            color: black;
+        }
+        
+        .box {
+            display: none;
+            position: absolute;
+            background-color: antiquewhite;
+            min-width: 160px;
+            z-index: 1;
+            text-align: center;
+        }
+        
+        .box a:link {
+            background-color: white;
+            display: block;
+            color: black;
+        }
+        
+        .box a:visited,
+        .box a:active {
+            color: black;
+        }
+        
+        .box a:hover {
+            background-color: #444444;
+            color: white;
+        }
+        
+        .lii:hover .box {
+            display: block;
+        }
+        
+        .lastli {
+            background-color: forestgreen;
+        }
+        
+        .lastli:hover a {
+            background-color: forestgreen;
+            color: white;
+        }
+        
+        .box2 {
+            position: absolute;
+            background-color: #444444;
+            display: none;
+        }
+        
+        .box2 a:link {
+            background-color: #444444;
+            color: white;
+        }
+        
+        .box2 a:visited,
+        .box2 a:active {
+            background-color: #444444;
+            color: white;
+        }
+        
+        .box2 a:hover {
+            background-color: red;
+            color: black;
+        }
+        
+        .lastli:hover .box2 {
+            display: block;
+        }
+        
+        .box3 .Fput {
+            display: block;
+        }
+        
+        label {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            display: block;
+            margin: 10px 0;
+            padding: 14px 16px;
+            box-sizing: border-box;
+            border: 2px solid #cccccc;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+        
+        input[type="text"]:hover {
+            background-color: darkgray;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            display: block;
+            padding: 15px 16px;
+            margin: 10px;
+            border: none;
+            background-color: forestgreen;
+            color: white;
+            font-size: 20px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        #box3 {
+            border-radius: 6px;
+            padding: 20px;
+            background-color: #444444;
+            margin: 5px;
+        }
+        
+        #Count {
+            width: 100%;
+            padding: 10px 16px;
+            font-size: 20px;
+            border: none;
+            border-radius: 7px;
+            background-color: #cccccc;
+            margin: 10px 0;
+        }
+        
+        input[type="password"] {
+            width: 100%;
+            display: block;
+            margin: 10px 0;
+            padding: 14px 16px;
+            box-sizing: border-box;
+            border: 2px solid #cccccc;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+        
+        #Fname {
+            border: none;
+            border-bottom: 2px solid white;
+            background-color: #444444;
+            color: white;
+        }
+        
+        #Email:focus {
+            width: 50%;
+            transition: width 0.4s ease-in-out;
+        }
+        
+        #txta {
+            width: 100%;
+            height: 100px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bolder;
+            border: none;
+        }*/
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .header {
+            background-color: #f3f3f3;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #222222;
+            border-radius: 4px;
+        }
+        
+        ul {
+            list-style-type: none;
+            background-color: #222222;
+            border-radius: 4px;
+        }
+        
+        li a:link {
+            color: white;
+            font-size: 30px;
+            font-weight: bolder;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 10px 16px;
+            display: block;
+            float: left;
+        }
+        
+        li a:visited,
+        li a:active {
+            color: white;
+        }
+        
+        li a:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        div {
+            overflow: hidden;
+            background-color: #f3f3f3;
+            border: 2px solid black;
+            margin: 0;
+        }
+        
+        .col {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            padding: 10px;
+            text-align: center;
+            border: 2px solid black;
+            background-color: #f3f3f3;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .col {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+        
+        strong {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- img Gallery: 
+    <div class="gall">
+        <a href="Images/HVOB.jpg" target="_blank">
+            <img src="Images/HVOB.jpg" alt="hvob">
+        </a>
+        <div class="desc">Add Your Discreption Here</div>
+    </div>
+
+    <div class="gall">
+        <a href="Images/HVOB.jpg" target="_blank">
+            <img src="Images/HVOB.jpg" alt="hvob">
+        </a>
+        <div class="desc">Add Your Discreption Here</div>
+    </div>
+
+    <div class="gall">
+        <a href="Images/HVOB.jpg" target="_blank">
+            <img src="Images/HVOB.jpg" alt="hvob">
+        </a>
+        <div class="desc">Add Your Discreption Here</div>
+    </div>
+
+    <div class="gall">
+        <a href="Images/HVOB.jpg" target="_blank">
+            <img src="Images/HVOB.jpg" alt="hvob">
+        </a>
+        <div class="desc">Add Your Discreption Here</div>
+    </div>-->
+
+    <!-- Styling Fomrs and Review On Dropdowns
+    <header>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            </li>
+            <li>
+                <a href="https://www.soundcloud.com" target="_blank">Mazzika</a>
+            </li>
+            <li>
+                <a href="https://www.anghami.com" target="_blank">Aghani</a>
+            </li>
+            <li>
+                <a href="https://www.google.com">Search</a>
+            </li>
+            <li class="lii">
+                <a class="lnk" href="https:///www.google.com/Programming" target="_blank">Code</a>
+                <div class="box">
+                    <a href="https://www.w3schools.com" target="_self">WebDev</a>
+                    <a href="https://1337x.to" target="_self">torrents</a>
+                    <a href="https://www.piximperfect.com" target="_self">Graphics</a>
+                </div>
+            </li>
+            <li class="lastli" style="float: right;">
+                <a href="#">About</a>
+                <div class="box2">
+                    <a href="#">Link3</a>
+                    <a href="#">Link2</a>
+                    <a href="#">Link1</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <div id="box3">
+        <form action="">
+            <label for="Fname">Fullname: </label>
+            <input type="text" id="Fname" name="Fname" placeholder="Your name...">
+
+            <label for="Uname">Username: </label>
+            <input type="text" id="Uname" name="Uname" placeholder="Username...">
+
+            <select name="Sex" id="Count">
+                <option value="">Gender...</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+
+            <label for="Email">Email</label>
+            <input type="text" name="Email" id="Email" placeholder="xyz...@example..">
+
+            <select name="Country" id="Count">
+                <option value="">Choose Your Country...</option>
+                <option value="Australia">Australia</option>
+                <option value="China">China</option>
+                <option value="Denemark">Denemark</option>
+                <option value="Egypt">Egypt</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Mexico">Mexico</option>
+            </select>
+
+            <label for="Pass">Password</label>
+            <input type="password" name="Pass" id="Pass">
+            <label for="Cpass">Confirm Password</label>
+            <input type="password" name="Cpass" id="Cpass">
+
+            <textarea name="txta" id="txta" cols="30" rows="10">Some Text...</textarea>
+
+            <input type="submit" value="submit">
+        </form>
+    </div>-->
+
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="topnav">
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+
+        <div class="col">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+
+        <div class="col">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+
+    <footer>
+        <h6>Footer Love Female Feet</h6>
+        <p>Female FEET Fetish is somthing wrong! you can't focus on anything if there is a female with barefeet or a female wearing a sandle or flipflop or a sexy highheel infront of you, for me I Love Clean Feet, fresh pedi and well painted maybe not all
+            toes are the same pedi color but it should be clean, amazing and smells good i never lick or sniff feet I just love looking at them naked and on the best view, <strong>If I'm Having Sex I Really Want My Female Partner BareFeet Yummyyyy....!!!</strong></p>
+    </footer>
+</body>
+
+</html>

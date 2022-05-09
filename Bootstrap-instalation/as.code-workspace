@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "..\\Bootstrap\\bootstrap-4.5.0\\dist\\css"
+		},
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Bootstrap-instalation"
+    }
+}

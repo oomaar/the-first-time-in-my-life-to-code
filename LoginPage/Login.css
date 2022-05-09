@@ -1,0 +1,41 @@
+body {
+    background-image: url(Images/BackGroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #192a56;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a:link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 0px;
+    color: white;
+    display: block;
+    cursor: pointer;
+}
+
+li a:visited,
+li a:active {
+    color: white;
+}
+
+li a:hover {
+    background-color: #c23616;
+    color: black;
+}

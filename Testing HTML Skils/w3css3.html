@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hovdiv {
+            display: none;
+            min-width: 160px;
+            background-color: #555555;
+            padding: 10px 16px;
+            color: white;
+            font-size: 25px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
+            margin: 10px;
+        }
+        
+        .box:hover .hovdiv {
+            display: block;
+        }
+        
+        .imgdiv {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .img2div {
+            display: none;
+        }
+        
+        .imgdiv:hover .img2div {
+            display: block;
+        }
+        
+        .btndiv {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .linkdiv {
+            display: none;
+        }
+        
+        .linkdiv a {
+            text-decoration: none;
+            background-color: whitesmoke;
+            display: block;
+            padding: 15px;
+            font-size: 20px;
+            color: black;
+            margin: 0;
+        }
+        
+        .linkdiv a:hover {
+            background-color: #555555;
+            color: white;
+        }
+        
+        .btndd {
+            padding: 20px;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+        }
+        
+        .btndiv:hover .linkdiv {
+            display: block;
+        }
+        
+        ul {
+            position: relative;
+            list-style-type: none;
+            display: block;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #333333;
+            overflow: hidden;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a:link,
+        .dda:link {
+            text-decoration: none;
+            background-color: none;
+            display: block;
+            padding: 20px;
+            font-size: 20px;
+            color: black;
+            margin: 0;
+        }
+        
+        li a:visited,
+        .dda:visited,
+        li a:active,
+        .dda:active {
+            color: white;
+        }
+        
+        li a:hover,
+        .ddli:hover .dda {
+            background-color: red;
+        }
+        
+        li.ddli {
+            display: inline-block;
+        }
+        
+        .box2 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .box2 a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .box2 a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .ddli:hover .box2 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Page</a></li>
+
+        <li class="ddli">
+
+            <a href="#" class="dda">Dropdown</a>
+
+            <div class="box2">
+
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+
+            </div>
+
+        </li>
+
+    </ul>
+
+    <br><br><br><br><br>
+    <div class="box">
+        <span>Hover Over Me</span>
+        <div class="hovdiv">
+            <p>Hello World</p>
+        </div>
+    </div><br><br>
+
+    <div class="imgdiv">
+        <img src="Images/HVOB.jpg" alt="ai soura" style="width: 200px; height: 250px;">
+        <div class="img2div">
+            <img src="Images/HVOB.jpg" alt="ai soura" style="width: 200px; height: 250px;">
+        </div>
+    </div><br><br>
+
+    <div class="btndiv">
+        <button class="btndd">Drop Down</button>
+        <div class="linkdiv">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div><br><br>
+</body>
+
+</html>

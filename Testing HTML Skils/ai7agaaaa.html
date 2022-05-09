@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #353b48;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        a:link {
+            color: white;
+            background-color: none;
+            background-image: repeating-radial-gradient( cyan, blue, white);
+            text-decoration: none;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            padding: 15px;
+            position: relative;
+            left: 0;
+            border: 3px solid orange;
+            border-radius: 20px, 10px, 20px, 10px;
+            cursor: pointer;
+        }
+        
+        a:visited,
+        a:active {
+            color: white;
+            background-color: none;
+        }
+        
+        a::before,
+        a::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 4px;
+            background: #353b48;
+            transform: skewX(50deg), skewY(90deg);
+            transition: .4s linear;
+        }
+        
+        a::before {
+            top: -4px;
+            left: 10%;
+        }
+        
+        a::after {
+            bottom: -4px;
+            right: 10%;
+        }
+        
+        a:hover::before {
+            left: 80%;
+        }
+        
+        a:hover::after {
+            right: 80%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#">Center</a>
+
+</body>
+
+</html>

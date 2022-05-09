@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+}
+
+div.top-container {
+    height: 100px;
+}
+
+div.top-container a:link {
+    color: rgb(49, 49, 49);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+img.img-1 {
+    height: 150px;
+    width: 150px;
+}
+
+div.log-in {
+    border: 1px solid black;
+    display: inline-block;
+    float: left;
+    width: 45%;
+}
+
+div.log-in-via {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    border: 1px solid grey;
+}
+
+button.l2 {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px black;
+    display: block;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    width: 320px;
+    font-size: 2.5‬rem;
+}
+
+img.li {
+    float: left;
+}
+
+#e-mail {
+    border: 0;
+    border-bottom: 2px solid black;
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 15%;
+}
+
+#pass {
+    border: 0;
+    border-bottom: 2px solid black;
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 15%;
+}

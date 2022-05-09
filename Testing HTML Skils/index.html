@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVOB | Music</title>
+
+    <style>
+        body {
+            margin: 10px;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #222222;
+        }
+        
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .header h1 {
+            font-size: 70px;
+            border: 2px solid white;
+            position: relative;
+            background: none;
+            cursor: pointer;
+            color: #3498db;
+            text-transform: uppercase;
+            font-weight: 700px;
+        }
+        
+        h1::before,
+        h1::after {
+            content: "";
+            width: 14px;
+            height: 5px;
+            background: red;
+            transform: skewX(50deg);
+            transition: .4s linear;
+        }
+        
+        h1::before {
+            top: -4px;
+            left: 10%;
+        }
+        
+        h1::after {
+            bottom: -4px;
+            right: 10%;
+        }
+        
+        h1:hover::before {
+            left: 80%;
+        }
+        
+        h1:hover::after {
+            right: 80%;
+        }
+        
+        .header p {
+            font-size: 40px;
+            color: #3498db;
+        }
+        
+        div.links {
+            background-color: #3f2f2f;
+            border-radius: 10px, 10px, 0px, 0px;
+        }
+        
+        div.links a:link {
+            text-decoration: none;
+            font-size: 35px;
+            padding: 10px;
+            display: inline-block;
+            text-transform: uppercase;
+            color: #3498db;
+        }
+        
+        div.links a:visited,
+        div.links a:active {
+            color: #3498db;
+        }
+        
+        div.links a:hover {
+            background-color: #ff3838;
+            color: #ffa801;
+        }
+        
+        div.card {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 472px;
+            text-align: center;
+        }
+        
+        div.card img {
+            border: none;
+            height: 350px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>HVOB Music</h1>
+        <p>Her Voice Over Boys</p>
+    </div>
+
+    <div class="links">
+        <a href="#">Albums</a>
+        <a href="#">Singles</a>
+        <a href="#">Events</a>
+        <a href="#" style="float: right;">About</a>
+    </div>
+
+    <div class="card">
+        <h2>Welcome To Our World!</h2>
+        <img class="img1" src="Images/HVOB.jpg" alt="Our Logo">
+    </div>
+</body>
+
+</html>

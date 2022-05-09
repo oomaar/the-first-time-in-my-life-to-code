@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS 2</title>
+</head>
+<style>
+    /* Inline-Block Lesson */
+    
+    body {
+        background-color: #95afc0;
+    }
+    
+    .nav {
+        background-color: #2C3A47;
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 25px;
+    }
+    
+    .lnk:link {
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: 2px solid;
+        width: 200px;
+        padding: 20px;
+        font-weight: 600;
+        position: relative;
+        color: #fbc531;
+        cursor: pointer;
+    }
+    
+    a:active,
+    a:visited {
+        color: #fbc531;
+    }
+    
+    .lnk::before,
+    .lnk::after {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 4px;
+        background: #2C3A47;
+        transform: skewX(50deg);
+        transition: .4s linear;
+    }
+    
+    .lnk::before {
+        top: -4px;
+        left: 10%;
+    }
+    
+    .lnk::after {
+        bottom: -4px;
+        right: 10%;
+    }
+    
+    .lnk:hover::before {
+        left: 80%;
+    }
+    
+    .lnk:hover::after {
+        right: 80%;
+    }
+    /* Align Lesson */
+    
+    .centerDiv {
+        margin: auto;
+        border: 3px solid greenyellow;
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        font-weight: 1000;
+        font-size: 20px;
+    }
+    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+        opacity: 0.3;
+    }
+    
+    .imgDiv {
+        border: 3px solid greenyellow;
+        text-align: center;
+        font-weight: 1000;
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .centerDiv2 {
+        border: 3px solid greenyellow;
+        text-align: center;
+        font-weight: 1000;
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+    }
+    /* 1- Descendant Selector using SPACE
+    .centerDiv2 .pp {
+        background-color: red;
+    }*/
+    /* 2- Child Selector Using >     
+    .centerDiv2>.pp {
+        background-color: red;
+    }*/
+    /* 3- Adjacent Sibling Selector using +
+    .centerDiv2+.pp {
+        background-color: red;
+    }*/
+    /* 4- Sibling Selector Usin ~
+    .centerDiv2~.pp {
+        background-color: red;
+    }*/
+    
+    div.centerDiv2:hover {
+        background-color: #555500;
+    }
+    
+    p.extra {
+        display: none;
+    }
+    
+    div.imgDiv:hover p {
+        display: block;
+    }
+    
+    div.imgDiv:hover img {
+        opacity: 1.0;
+    }
+    
+    q:lang(no) {
+        quotes: "~" "~";
+    }
+    
+    p.ppp::first-line {
+        color: #ff0000;
+    }
+    
+    p.ppp::first-letter {
+        font-size: 70px;
+        color: #ffff00;
+    }
+    /* Navigation Bar */
+    
+    ul.nav2 {
+        /*Setting margin and padding to zero to remove browser default*/
+        list-style-type: none;
+        background-color: #2C3A47;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav2 li a {
+        display: block;
+        color: #fbc531;
+        padding: 10px 16px;
+        text-decoration: none;
+    }
+    
+    .nav2 li a:active {
+        background-color: green;
+    }
+    
+    .nav2 .activelink {
+        background-color: white;
+        color: black;
+    }
+    
+    .nav2 li a:hover:not(.activelink) {
+        background-color: black;
+        color: #ffffff;
+    }
+    
+    .nav3 {
+        background-color: #333;
+        list-style-type: none;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        position: sticky;
+        /*position: fixed; the diffrence between sticky and fixed ->*/
+        /*fixed: makes it onscreen when scrolling hidding whats after it! */
+        /*sticky: makes it onscreen when scrolling not hidding after it! */
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .li3 {
+        float: left;
+    }
+    
+    .li3 a {
+        display: inline-block;
+        padding: 25px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .li3 a:hover:not(.activelink) {
+        background-color: black;
+    }
+    
+    .activelink {
+        background-color: darkgreen;
+    }
+    /* selects all target=_blank */
+    
+    a[target=_blank] {
+        background-color: red;
+    }
+    /* selects all class=lnk */
+    
+    [class~=lnk] {
+        display: none;
+    }
+    /* selects all classes which BEGIN the word top */
+    
+    [class|=top] {
+        display: none;
+    }
+    /* selects all classes which Starting the word top */
+    
+    [class^=top] {
+        display: none;
+    }
+</style>
+
+<body>
+    <h1>Project-X</h1>
+    <!--Inline-Block Lesson-->
+    <ul class="nav">
+        <li><a href="#" class="lnk" target="_blank">HOME</a></li>
+        <li><a href="#" class="lnk" target="_self">About US</a></li>
+        <li><a href="#" class="lnk">Our Clients</a></li>
+        <li><a href="#" class="lnk">Contact US</a></li>
+    </ul><br>
+
+    <!--Align Lesson-->
+    <div class="centerDiv">
+        <p>To Center A Div Use Style Margin Auto</p>
+    </div><br>
+
+    <div class="imgDiv">
+        <img src="Images/HVOB.jpg" alt="HVOB" style="width: 300px; height: 300px;">
+        <p>To Center An Image Use display block, margin-left auto, margin-right auto</p>
+        <p class="extra">Extra Paragraph</p>
+    </div>
+
+    <!-- Wana Make Footer Sticky when Scrolling !!!-->
+    <footer class="feet">
+    </footer>
+
+    <!-- What Are Combinators? -->
+    <!-- Four Types OF Them in the style tag... -->
+    <br><br>
+    <div class="centerDiv2">
+        <p class="pp">1- Lorem ipsum dolor sit amet.</p>
+        <p class="pp">2- Lorem ipsum dolor sit amet.</p>
+        <!-- Put Any Paragraph In A <section> to use child selcetor-->
+        <p class="pp">3- Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p class="pp">4- Lorem ipsum dolor sit amet.</p>
+    <p class="pp">5- Lorem ipsum dolor sit amet.</p>
+    <p class="pp">6- Lorem, ipsum dolor. <q>a qoute is qouted by land poseudo code</q> </p>
+    <p class="ppp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro earum asperiores eum sequi fugiat inventore, eveniet autem cupiditate a harum voluptate? Qui, vel voluptatem. Repudiandae labore vitae veritatis quis ipsum!</p><br><br>
+
+    <!-- My First JavaScript Code :D xD xD
+    <div style="border: 3px solid #fbc531;">
+        <p id="jss"></p>
+    </div>
+
+    <script>
+        var text = "";
+        var i = 0;
+        while (i < 10) {
+            text += "<br>The Number IS: " + i;
+            i++;
+        }
+        document.getElementById("jss").innerHTML = text;
+    </script>-->
+
+    <!-- Navigation Bar -->
+    <ul class="nav2">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Log In</a></li>
+    </ul><br><br><br>
+
+    <ul class="nav3">
+        <li class="li3">
+            <a href="https://www.google.com" class="activelink" target="_blank">Google</a>
+        </li>
+        <li class="li3">
+            <a href="https://www.youtube.com">Youtube</a>
+        </li>
+        <li class="li3">
+            <a href="#">Dropdown</a>
+        </li>
+        <li class="li3">
+            <a href="https://www.facebook.com">Facebook</a>
+        </li>
+        <li class="li3" style="float: right;">
+            <a href="#" class="activelink">About</a>
+        </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, animi sit molestiae fugiat maiores vero? Velit, dolorem, dignissimos atque, soluta a quidem illum fugit ab aut exercitationem adipisci cupiditate. Eligendi.</p>
+
+    <h1 class="top-header">hi</h1>
+    <p class="top-para">hiiiii</p>
+    <h1 class="toppp">hello</h1>
+</body>
+
+</html>

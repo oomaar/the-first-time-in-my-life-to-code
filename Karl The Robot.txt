@@ -1,0 +1,120 @@
+Angela's Answer:-
+
+function main(){
+   beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+}
+
+function goUpTurnRight() {
+   turnRight();
+   move();
+   turnRight();
+}
+
+function goUpTurnLeft() {
+   turnLeft();
+   move();
+   turnLeft();
+}
+
+function beepersRight() {
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();  
+}
+
+function beepersLeft() {
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+}
+
+Omar's Answer:-
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+   putBeeper();
+   diagonaleStep();
+   diagonaleStep();
+   diagonaleStep();
+   diagonaleStep();
+   turnRight();
+   verticalStep();
+   verticalStep();
+   turnRight();
+   verticalStep();
+   rightDirection();
+   verticalStep();
+   verticalStep();
+   turnRight();
+   verticalStep();
+   turnRight();
+   turnRightAndBeeper();
+   leftDirection ();
+   verticalStep();
+   endPosition();
+
+}
+
+function diagonaleStep() {
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+}
+
+function verticalStep() {
+   move();
+   move();
+   putBeeper();
+}
+
+function rightDirection() {
+   move();
+   move();
+   turnRight();
+}
+
+function leftDirection () {
+   turnLeft();
+   move();
+   move();
+   turnLeft();
+}
+
+function turnRightAndBeeper() {
+   move();
+   turnRight();
+   move();
+   putBeeper();
+}
+
+function endPosition() {
+      move();
+   turnLeft();
+   move();
+   move();
+   move();
+   turnRight();
+}
+
+
+https://stanford.edu/~cpiech/karel/ide.html

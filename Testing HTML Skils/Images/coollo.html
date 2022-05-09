@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Developer</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 0;
+            font-family: "montserrat", sans-serif;
+        }
+        
+        body {
+            background-color: #353b48;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        button.btn {
+            width: 200px;
+            height: 60px;
+            background: none;
+            border: 2px solid;
+            cursor: pointer;
+            color: #3498db;
+            text-transform: uppercase;
+            font-weight: 700px;
+            font-size: 16px;
+            position: relative;
+        }
+        
+        .btn::before,
+        .btn::after {
+            content: "";
+            position: absolute;
+            width: 14px;
+            height: 4px;
+            background: #353b48;
+            transform: skewX(50deg);
+            transition: .4s linear;
+        }
+        
+        .btn::before {
+            top: -4px;
+            left: 10%;
+        }
+        
+        .btn::after {
+            bottom: -4px;
+            right: 10%;
+        }
+        
+        .btn:hover::before {
+            left: 80%;
+        }
+        
+        .btn:hover::after {
+            right: 80%;
+        }
+        
+        div.div1 {
+            background-color: #3498;
+        }
+        
+        a.btn {
+            width: 200px;
+            height: 60px;
+        }
+        
+        a:link {
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            border: 2px solid;
+            width: 200px;
+            padding: 20px;
+            font-weight: 600;
+            position: relative;
+            color: #fbc531;
+            cursor: pointer;
+        }
+        
+        a:active,
+        a:visited {
+            color: #fbc531;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <button class="btn">HOVER ME 1</button>
+        <button class="btn">Hover Me 2</button>
+        <button class="btn">Hover Me 3</button>
+        <button class="btn">Hover Me 4</button>
+        <button class="btn">Hover Me 5</button>
+        <button class="btn">Hover Me 6</button>
+        <button class="btn">Hover Me 7</button>
+        <button class="btn">Hover Me 8</button>
+        <button class="btn">Hover Me 9</button>
+        <button class="btn">Hover Me 10</button>
+        <a href="https://www.flatuicolors.com/" class="btn" target="_blank">Colors</a>
+        <a href="https://www.w3schools.com" class="btn" target="_blank">w3</a>
+    </div>
+</body>
+
+</html>

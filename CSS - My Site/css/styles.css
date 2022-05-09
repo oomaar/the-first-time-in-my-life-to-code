@@ -1,0 +1,197 @@
+body {
+    color: #40514E;
+    font-family: "Merriweather", serif;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #66bfbf;
+    font-family: "Sacramento", cursive;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    width: 20%;
+    /*100% = 16px so:- 90px/16px = 562.5%*/
+}
+
+h2 {
+    color: #66bfbf;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #66bfbf;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+a {
+    color: #66bfbf;
+}
+
+hr {
+    border-top: 10px dotted #11999e;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    opacity: 0.3;
+    width: 7%;
+    /*
+    border: dotted #eaf6f6;
+    border-bottom: none;
+    margin: 100px auto;
+    width: 4%;
+    */
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2;
+}
+
+h2.programmer {
+    font-weight: normal;
+    margin-bottom: 215px;
+}
+
+div.top-container {
+    background-color: #11999e;
+    padding-top: 100px;
+    position: relative;
+}
+
+img.top-cloud {
+    position: absolute;
+    right: 500px;
+    top: 30px;
+}
+
+img.bottom-cloud {
+    bottom: 300px;
+    left: 600px;
+    position: absolute;
+}
+
+div.middle-container {
+    margin: 100px 0;
+    line-height: 2;
+}
+
+img.my-image {
+    width: 15%;
+}
+
+div.skills {
+    margin-top: 30px;
+}
+
+div.skill-row {
+    margin: 100px auto 100px auto;
+    text-align: left;
+    width: 50%;
+}
+
+img.skill-image1 {
+    float: left;
+    margin-right: 30px;
+    width: 25%;
+}
+
+img.skill-image2 {
+    float: right;
+    height: 250px;
+    width: 25%;
+}
+
+div.contact-me {
+    line-height: 3;
+}
+
+
+/*
+a.btn:link {
+    background-color: #11999e;
+    border: 1px solid #11999e;
+    border-radius: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.875rem;
+    padding: 10px;
+    text-decoration: none;
+    please try css3 button Generator button creator
+}*/
+
+a.btn:link {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #eaf6f6;
+    font-size: 30px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+a.btn:active,
+a.btn:visited {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #eaf6f6;
+    font-size: 30px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+a.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+div.bottom-container {
+    background-color: #11999e;
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 2;
+}
+
+a.footer-link:link {
+    color: #66bfbf;
+    font-size: 1.25rem;
+    margin: 30px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a.footer-link:active,
+a.footer-link:visited {
+    color: #66bfbf;
+    font-size: 1.25rem;
+    margin: 30px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a.footer-link:hover {
+    color: #eaf6f6;
+}
